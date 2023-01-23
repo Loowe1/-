@@ -1,0 +1,32 @@
+﻿<Window x:Class="парик.выб"
+        WindowState="Maximized"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:парик"
+        mc:Ignorable="d"
+        Title="выб" Height="1080" Width="1920" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/1621817238_15-phonoteka_org-p-fon-s-parikmakherskimi-instrumentami-17.jpg"/>
+        </Grid.Background>
+        <Label Content="ВЫбор услуги" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="48" Foreground="#DDFFFFFF"/>
+        <DataGrid x:Name="uss" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,132,674,532" CanUserAddRows="False" CanUserReorderColumns="False" PreviewMouseDoubleClick="uss_PreviewMouseDoubleClick"/>
+        <Label Content="Услуги" HorizontalAlignment="Left" Margin="552,55,0,0" VerticalAlignment="Top" FontSize="48" Foreground="#DDFFFFFF"/>
+        <DataGrid x:Name="ch" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,642,674,10" PreviewMouseDoubleClick="ch_PreviewMouseDoubleClick"/>
+        <TextBox x:Name="UseridBox" HorizontalAlignment="Left" Margin="1435,812,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White" FontSize="20"/>
+        <TextBox x:Name="datt" HorizontalAlignment="Left" Margin="1628,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Background="White" FontSize="20" Foreground="Black"/>
+        <TextBox x:Name="fiokl1" HorizontalAlignment="Left" Margin="1628,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Background="White" FontSize="20"/>
+        <Label Content="Чеки" HorizontalAlignment="Left" Margin="552,565,0,0" VerticalAlignment="Top" FontSize="48" Foreground="#DDFFFFFF"/>
+        <Label Content="ФИО клиента" HorizontalAlignment="Left" Margin="1628,132,0,0" VerticalAlignment="Top" FontSize="22" Foreground="#DDFFFFFF"/>
+        <Label Content="Дата составления" HorizontalAlignment="Left" Margin="1628,210,0,0" VerticalAlignment="Top" FontSize="22" Foreground="#DDFFFFFF"/>
+        <TextBox x:Name="fiosot" HorizontalAlignment="Left" Margin="1435,758,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="1676,332,0,0" VerticalAlignment="Top" FontSize="22" Height="72" Width="165" Click="Button_Click"/>
+        <TextBox x:Name="nomus" HorizontalAlignment="Left" Margin="1435,692,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFF9F9F9"/>
+        <Button Content="Напечатать чек" HorizontalAlignment="Left" Margin="1676,452,0,0" VerticalAlignment="Top" Height="80" Width="165" Click="Button_Click_1"/>
+        <TextBox x:Name="sto" HorizontalAlignment="Left" Margin="1435,897,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White" FontSize="18"/>
+        <Button Content="Вернуться" HorizontalAlignment="Left" Margin="1662,956,0,0" VerticalAlignment="Top" FontSize="22" Height="48" Width="171" Click="Button_Click3" Cursor="Hand"/>
+
+    </Grid>
+</Window>
